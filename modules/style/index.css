@@ -1,7 +1,13 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    width: fit-content;
-    height: fit-content;
-
+    
+   
+}
+#root{
+    width: 100%
+}
+div{
+    display: flex;
+    flex-direction: column;
 }
