@@ -1,5 +1,6 @@
 
 
+import Control from "./Components/Control/index.js";
 import Teste from "./Components/Teste.js";
 import BuildComponent from "./modules/BuildComponent/index.js";
 import BuildRootComponent from "./modules/BuildRootComponent/index.js";
@@ -53,7 +54,10 @@ function app(){
                         gap: "30px"
                     },
                     childElements: [
-                        Teste({index:0}),Teste({index:1}),Teste({index:2}),Teste({index:3})
+                        Teste({index:0}),
+                        Control({
+                            setControl: setC
+                        })
                     ]
                    })
                 ]  
