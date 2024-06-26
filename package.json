@@ -1,0 +1,25 @@
+{
+  "name": "rosaurajs-framework",
+  "version": "1.0.0",
+  "description": "Este é um FrameWork flexível, com bibliotecas de auto desempenho para tratamento de componentes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luis687687/rosaura.git"
+  },
+  "keywords": [
+    "Rosaura",
+    "Rosaurajs",
+    "Rosauraframework"
+  ],
+  "author": "Luis Domingos Marques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luis687687/rosaura/issues"
+  },
+  "homepage": "https://github.com/luis687687/rosaura#readme"
+}

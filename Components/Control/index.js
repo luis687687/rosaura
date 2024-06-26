@@ -1,4 +1,4 @@
-import BuildComponent from "../../modules/BuildComponent/index.js"
+import BuildComponent from "../../Rosaura/BuildComponent/index.js"
 
 export default (props={}) => {
     const {setControl = null} = props
@@ -11,7 +11,7 @@ export default (props={}) => {
                     class: "el"
                 },
                 events: {
-                    change: _ => setControl(_.target.value)
+                    durationchange: _ => setControl(_.target.value)
                 }
             }
         )
