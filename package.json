@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/luis687687/rosaura/issues"
   },
-  "homepage": "https://github.com/luis687687/rosaura#readme",
-  "dependencies": {
-    "rozaura": "^1.0.1"
-  }
+  "homepage": "https://github.com/luis687687/rosaura#readme"
 }
