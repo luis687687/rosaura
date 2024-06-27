@@ -1,4 +1,4 @@
-import BuildComponent from "../../Rosaura/BuildComponent/index.js"
+import BuildComponent from "../../node_modules/rozaura/BuildComponent/index.js"
 
 export default (props={}) => {
     const {setControl = null} = props

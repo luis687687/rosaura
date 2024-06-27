@@ -9,7 +9,7 @@ export default (event=function(){}, params=[]) => {
             throw "Erro essa variável não é de estado";
         const {index} = var_controller.props
         if(index == 4)
-            console.log(var_state_list[index], " e ")
+            //console.log(var_state_list[index], " e ")
         if(indexlist.indexOf(index) != -1) //se a variável de estado está repetindo
             return; // não avança, desnecessáriamente
         indexlist.push(event)
@@ -26,7 +26,7 @@ const createInvisibleLink = (index, event=()=>{}) => { //indece da variavel de e
     linkcontroller.innerHTML = "Luis"
     linkcontroller.addEventListener("click", (elementevent) => {
         elementevent.preventDefault()
-        // console.log(var_state_list)
+        // //console.log(var_state_list)
         // if(var_state_list[index].props.lastvalue != var_state_list[index].value)
             event();
     })

@@ -1,8 +1,8 @@
-import { RosauraRouter, defVariable } from "../Rosaura/index.js"
+import { RosauraRouter, defVariable } from "../node_modules/rozaura/index.js"
 import Page1 from "../Components/Page1/index.js"
 import Page2 from "../Components/Page2/index.js"
 import Page3 from "../Components/Page3/index.js"
-import RosauraRoute from "../Rosaura/RosauraRouter/RosauraRoute/index.js"
+import RosauraRoute from "../node_modules/rozaura/RosauraRouter/RosauraRoute/index.js"
 
 export default props => {
 

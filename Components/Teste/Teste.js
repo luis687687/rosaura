@@ -1,8 +1,8 @@
-import BuildComponent from "../../Rosaura/BuildComponent/index.js"
-import defVariable from "../../Rosaura/DataBind/defVariable/index.js"
-import varMonitor from "../../Rosaura/DataBind/varMonitor/index.js"
-import varPrint from "../../Rosaura/DataBind/varPrint/index.js"
-import useCss from "../../Rosaura/useCss/index.js"
+import BuildComponent from "../../node_modules/rozaura/BuildComponent/index.js"
+import defVariable from "../../node_modules/rozaura/DataBind/defVariable/index.js"
+import varMonitor from "../../node_modules/rozaura/DataBind/varMonitor/index.js"
+import varPrint from "../../node_modules/rozaura/DataBind/varPrint/index.js"
+import useCss from "../../node_modules/rozaura/useCss/index.js"
 
 
 

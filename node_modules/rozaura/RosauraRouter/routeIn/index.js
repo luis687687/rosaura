@@ -1,9 +1,11 @@
-//cria um link invisivel, com funcao a ser chamada quando a rota a berta, isso é controlado no código das rotas
-export default (event = function(args){}, {routerref}) => {
+//esta função prepara o evento event, a ser chamado no click invisivel quando a rota é aberta
+export default (event = function(args){}, obj = {routerref}) => {
+    const {routerref} = obj
+    //cria um link invisivel, com funcao a ser chamada quando a rota a berta, isso é controlado no código das rotas
     createLinkToClickInRouteId(routerref, event)
 }
 
-//cria link para ser clicado, quando uma rota é a bandonada
+//cria link para ser clicado, quando uma rota é aberta
 //esse link é clicado no código de controle de rotas
 const createLinkToClickInRouteId = (routerref, event) => {
     const link = document.createElement("a")

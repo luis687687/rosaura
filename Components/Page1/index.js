@@ -1,24 +1,13 @@
-import BuildComponent from "../../Rosaura/BuildComponent/index.js";
-import varPrint from "../../Rosaura/DataBind/varPrint/index.js";
-import routeIn from "../../Rosaura/RosauraRouter/routeIn/index.js";
-import routeLeave from "../../Rosaura/RosauraRouter/routeLeave/index.js";
-import useCss from "../../Rosaura/useCss/index.js";
-import useFile from "../../Rosaura/useFile/index.js";
+import BuildComponent from "../../node_modules/rozaura/BuildComponent/index.js";
+import varPrint from "../../node_modules/rozaura/DataBind/varPrint/index.js";
+import routeIn from "../../node_modules/rozaura/RosauraRouter/routeIn/index.js";
+import routeLeave from "../../node_modules/rozaura/RosauraRouter/routeLeave/index.js";
+import useCss from "../../node_modules/rozaura/useCss/index.js";
+import useFile from "../../node_modules/rozaura/useFile/index.js";
 
 
 //rou
 export default ({routerref, v, setV}) => {
-    
-
-    var time
-    routeLeave((par) => {
-      clearInterval(time) 
-    }, {routerref})
-    routeIn((par) => {
-        time = setInterval( _ => console.log("1"), 1000)
-        console.log("Rota aberta Page1 "+par)
-    }, {routerref})
-    
     return(
         BuildComponent({
             css: useCss("Page1"),

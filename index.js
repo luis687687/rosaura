@@ -1,6 +1,6 @@
 
 
-import Rosaura from "./Rosaura/index.js";
+import Rosaura from "rozaura";
 import app from "./app.js";
 
 const main =function(){
