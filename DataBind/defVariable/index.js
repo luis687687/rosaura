@@ -24,7 +24,7 @@ export default (initial) => {
         let v = object.value
         object.props.lastvalue = v
         object.value = nvalue //valor do objecto, essa acção é mapeada pelo set
-        console.log(object.props)
+        //console.log(object.props)
         setTimeout(
             _ => {
                 varBindAreaElement(object)

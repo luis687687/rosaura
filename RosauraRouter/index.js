@@ -12,7 +12,7 @@ export default (props = {active, routes:[{path, element}]}) => {
 
     
     const {routes, active} = props //atributos esperados
-    console.log(routes, " aqui")
+    //console.log(routes, " aqui")
     const [routeState, setRouteState] = defVariable(active) //variável de estado que controla a mudança de rotas
     const [paramsController, setParamsController] = defVariable("")
     activeRouteOneTimeTosetFatherElement({routes, routeState, setRouteState}) //a primeira chamada!
@@ -32,7 +32,7 @@ export default (props = {active, routes:[{path, element}]}) => {
 const changeURLMonitor = ({routeState}) => {
     varMonitor( _=> {
         var pathname = routeState.route.path+routeState.route.params //é melhor usar o route.path para pegar o valor, do que routeState.value, devido a primeira requisão manual do browser, em que routeState não terá value
-        console.log("set ", history_actual_route_index)
+        //console.log("set ", history_actual_route_index)
         replaceState({data:{index: history_actual_route_index, pathname},title:"",path:pathname}) //altera o path na url    
     }, [canPutHistoryState])
 }
@@ -48,7 +48,7 @@ const routeStateMonitor = ({routes, routeState, setRouteState, setParamsControll
         altereDefaultLinksToOpenRoute({routes, routeState, setRouteState}) //Altera o comportamento padrão dos links, e manipula o setRouteState
         altereAllLinksToId()
         setParamsController(routeState.route.params)
-        console.log("Mudou de rota!")
+        //console.log("Mudou de rota!")
         if(!is_the_first_open){ //se não é a primeira chamada
             callLinkToLeaveRoute({routes, last_route}) //então quer mudar de rota
             browserButtonEvent({routes, last_route, setRouteState})
@@ -239,7 +239,7 @@ const altereDefaultLinksToOpenRoute = ({setRouteState}) => {
                 config_params_string = "" //reseta a string universal de parametros
                 setRouteState(href)
                 setCanPutHistoryState(canPutHistoryState.value+1)
-                console.log(history_routes)
+                //console.log(history_routes)
             }
         }
     })

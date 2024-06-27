@@ -15,9 +15,7 @@ export default ({active , routes = [ {element:"", path: "", attributes: {}} ]}) 
         
     })
     const obj = {active, routes: route_array}
-    console.log(obj, " arra ")
     return obj
-
 }
 
 // {

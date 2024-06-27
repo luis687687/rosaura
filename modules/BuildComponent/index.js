@@ -3,7 +3,7 @@ import useCss from "../useCss/index.js"
 
 
 export default ({childElements = [], text, style = {}, events = {}, attributes = {}, type="div", onChange}) => { 
-    console.log(location)
+    //console.log(location)
     const element = document.createElement(type)
     if(! (text instanceof Array)) //se não for um array, então não quer formatar nada
         element.textContent = text
