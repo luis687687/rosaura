@@ -1,4 +1,7 @@
-export default (event = function(args){}, {routerref}) => {
+//esta função prepara o evento event, a ser chamado no click invisivel quando a rota é deichada
+export default (event = function(args){}, obj = {routerref}) => {
+    const {routerref} = obj
+    //cria um link invisivel, com funcao a ser chamada quando a rota a deichada, isso é controlado no código das rotas
     createLinkToClickLeaveRouteId(routerref, event)
 }
 
