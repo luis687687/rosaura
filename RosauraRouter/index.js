@@ -7,7 +7,7 @@ import altereLinkToId from "./altereLinkToId/index.js"
 
 
 const [canPutHistoryState, setCanPutHistoryState] = defVariable(0) //controlador de estado para mundança da url
-//essa função cria rotas
+//essa função cria rotas, aproveita do padrão de rotas mapeadas do RosauraRoute
 export default (props = {active, routes:[{path, element}]}) => {
 
     
