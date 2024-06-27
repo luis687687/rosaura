@@ -50,7 +50,6 @@ const routeStateMonitor = ({routes, routeState, setRouteState, setParamsControll
         setParamsController(routeState.route.params)
         //console.log("Mudou de rota!")
         if(!is_the_first_open){ //se não é a primeira chamada
-            console.log("bbbb")
             callLinkToLeaveRoute({routes, last_route}) //então quer mudar de rota
             browserButtonEvent({routes, last_route, setRouteState})
         }
