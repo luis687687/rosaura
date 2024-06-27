@@ -80,7 +80,6 @@ const callLinkToInRoute = ({routes, actual_route}) => {
     routes.forEach( (route, id) => {
         var actual_rout = actual_route === undefined ? history.state.value : actual_route
         if(route.path == actual_rout){
-            console.log("Aqui! ", config_link_to_click_enter_one_route+id)
            document.querySelector("."+config_link_to_click_enter_one_route+id)?.click()
         }
     })
