@@ -33,7 +33,7 @@ const changeURLMonitor = ({routeState}) => {
     varMonitor( _=> {
         var pathname = routeState.route.path+routeState.route.params //é melhor usar o route.path para pegar o valor, do que routeState.value, devido a primeira requisão manual do browser, em que routeState não terá value
         //console.log("set ", history_actual_route_index)
-        replaceState({data:{index: history_actual_route_index, pathname},title:"",path:pathname}) //altera o path na url    
+        replaceState({data:{index: history_actual_route_index, pathname, value:  routeState.route.path},title:"",path:pathname}) //altera o path na url    
     }, [canPutHistoryState])
 }
 
@@ -50,10 +50,13 @@ const routeStateMonitor = ({routes, routeState, setRouteState, setParamsControll
         setParamsController(routeState.route.params)
         //console.log("Mudou de rota!")
         if(!is_the_first_open){ //se não é a primeira chamada
+            console.log("bbbb")
             callLinkToLeaveRoute({routes, last_route}) //então quer mudar de rota
             browserButtonEvent({routes, last_route, setRouteState})
         }
+     
         callLinkToInRoute({routes, actual_route:routeState.value})
+        
         last_route = routeState.value //seta o valor da última rota
         is_the_first_open = false //garante que a seleccão da rota aconteça só nas chamadas de mundaça de rota
     }, [routeState])
@@ -64,7 +67,8 @@ const routeStateMonitor = ({routes, routeState, setRouteState, setParamsControll
 //sempre que muda de rota, verifica a ultima rota aberta e clica no link oculto, preparado pela função de monitoramento de rotas dechadas
 const callLinkToLeaveRoute = ({routes, last_route}) => {
     routes.forEach( (route, id) => {
-        if(route.path == last_route){
+        var last_rout = last_route === undefined ? history.state.value : last_route
+        if(route.path == last_rout){
            document.querySelector("."+config_link_to_click_leave_one_route+id)?.click()
         }
     })
@@ -74,7 +78,9 @@ const callLinkToLeaveRoute = ({routes, last_route}) => {
 //sempre que muda de rota, verifica a rota aberta e clica no link oculto, preparado pela função de monitoramente de rotas abertas
 const callLinkToInRoute = ({routes, actual_route}) => {
     routes.forEach( (route, id) => {
-        if(route.path == actual_route){
+        var actual_rout = actual_route === undefined ? history.state.value : actual_route
+        if(route.path == actual_rout){
+            console.log("Aqui! ", config_link_to_click_enter_one_route+id)
            document.querySelector("."+config_link_to_click_enter_one_route+id)?.click()
         }
     })
