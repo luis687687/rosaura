@@ -1,4 +1,4 @@
-import Rosaura from "../../../rosaura/rozaura/index.js"
+import Rosaura, { useCss } from "../../../rosaura/rozaura/index.js"
 export default (props = {text}) => {
 
     const {text, path = ""} = props
@@ -8,6 +8,11 @@ export default (props = {text}) => {
         Rosaura.BuildComponent(
             {
                 text: text,
+                css: useCss("/Components/Card"),
+                attributes: {
+                    class: "card"
+                },
+                
                 style: {
                     padding: '20px',
                     borderRadius: '8px',
