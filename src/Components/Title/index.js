@@ -1,4 +1,4 @@
-import {BuildComponent} from "../../../node_modules/rozaura/index.js"
+import {BuildComponent} from "../../../rosaura/rozaura/index.js"
 export default (props = {text}) => {
     const {text} = props
 

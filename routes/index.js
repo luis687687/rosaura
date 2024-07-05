@@ -1,4 +1,4 @@
-import Rosaura from "../node_modules/rozaura/index.js"
+import Rosaura from "../rosaura/rozaura/index.js"
 import Page1 from "../src/Pages/Page1/index.js"
 import Page2 from "../src/Pages/Page2/index.js"
 

@@ -1,4 +1,4 @@
-import {BuildComponent, useFile, varPrint, useCss} from "../../../node_modules/rozaura/index.js"
+import {BuildComponent, useFile, varPrint, useCss} from "../../../rosaura/rozaura/index.js"
 import Card from "../../Components/Card/index.js"
 import LeftBar from "../../Components/LeftBar/index.js"
 import Title from "../../Components/Title/index.js"

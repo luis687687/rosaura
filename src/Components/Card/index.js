@@ -1,4 +1,4 @@
-import Rosaura from "../../../node_modules/rozaura/index.js"
+import Rosaura from "../../../rosaura/rozaura/index.js"
 export default (props = {text}) => {
 
     const {text, path = ""} = props

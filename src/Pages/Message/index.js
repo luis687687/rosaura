@@ -1,4 +1,4 @@
-import {BuildComponent} from '../../../node_modules/rozaura/index.js';
+import {BuildComponent} from '../../../rosaura/rozaura/index.js';
 import Card from '../../Components/Card/index.js';
 
 

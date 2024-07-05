@@ -1,10 +1,11 @@
-import Rosaura, {BuildComponent, useFile, varPrint, useCss} from "../../../node_modules/rozaura/index.js"
+import Rosaura, {BuildComponent, useFile, varPrint, useCss} from "../../../rosaura/rozaura/index.js"
 import Card from "../../Components/Card/index.js"
 import LeftBar from "../../Components/LeftBar/index.js"
 import Title from "../../Components/Title/index.js"
 import Message from "../Message/index.js"
 
 export default ({routerref, title, setTitle}) => {
+    
     
     return(
      BuildComponent({
