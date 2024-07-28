@@ -22,7 +22,7 @@ O Rosaura Framework foi desenvolvido para facilitar a criação de aplicações 
 
 ## Estrutura do Projeto
 
-`
+```
 /project-root
 ├── assets
 ├── rosaura
@@ -36,7 +36,7 @@ O Rosaura Framework foi desenvolvido para facilitar a criação de aplicações 
 ├── index.html
 ├── index.js
 └── app.js
-`
+```
 
 ### Principais Pastas e Arquivos
 
