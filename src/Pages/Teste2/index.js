@@ -1,44 +1,26 @@
 import { BuildComponent, defVariable, routeIn, varPrint } from "../../../rosaura/rozaura/index.js"
 
-export default ({routerref}) => {
+export default ({}) => {
 
-
-    const [mensagem, setMensagem] = defVariable("Luis")
-   
-    var c = 0;
-   
-    routeIn( (objecto) => {
-        const {params} = objecto
-        console.log(params)
-        setMensagem(params.luis)
-        window.onresize = () => {
-
-            console.log(" Resized from route /teste2", window.innerWidth)
-        }
-       
-    }, {routerref})
-    
-
-
+    const [variavel_de_estado, setVariavelDeEstado] = defVariable(0)
     return(
         BuildComponent({
+            style: { alignItems: "center", justifyContent:"center", gap: '20px'},
             childElements: [
+                BuildComponent({text: varPrint("Contador de cliques {} ", [variavel_de_estado]),style: {width: "fit-content"}}),
                 BuildComponent({
-                    text: varPrint("Valor do parâmetro: {} ", [mensagem]),
-                    type: 'h1'
-                }),
-                BuildComponent( {
-                    type: "a",
-                    text: 'ir para outra',
-                    attributes: {
-                        href: '/teste'
-                    }
+                    style: {
+                        background: 'brown',
+                        color: 'white',
+                        width: 'fit-content',
+                        padding: '10px 30px',
+                        borderRadius: '8px',
+                        cursor: 'pointer'
+                    },
+                    text: "Clica",
+                    events: { click: _ => setVariavelDeEstado(variavel_de_estado.value + 1)}
                 })
-            ],
-            style: {
-                alignItems: "center",
-                justifyContent: 'center'
-            }
+            ]
         })
     )
 }
