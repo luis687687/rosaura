@@ -150,6 +150,7 @@ const MeuFormulario = () => {
     const [text, setText] = defVariable()
 
     return FormComponent({
+        action: "/destination.php",
         childElements: [
             BuildComponent({type:"h1", text: varPrint("Valor da input {}", [text])})
             InputComponent({ name: "nome", value: "", onChange: (value) => setText(value) }),
