@@ -6,7 +6,7 @@ Rosaura é um framework leve e flexível para a construção de aplicações web
 
 - [Visão Geral](#visão-geral)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação](#instalação-🚀)
+- [Instalação](#instalação🚀)
 - [Uso](#uso)
   - [Criando Componentes](#criando-componentes)
   - [Gerenciando Rotas](#gerenciando-rotas)
@@ -48,7 +48,7 @@ O Rosaura Framework foi desenvolvido para facilitar a criação de aplicações 
 - **index.js**: O ponto de entrada da aplicação.
 - **app.js**: Define a estrutura e o gerenciamento de rotas da aplicação.
 
-## Instalação 🚀
+## Instalação🚀
 
 Para usar o Rosaura Framework, clone este repositório e abra o arquivo `index.html` em seu navegador, em `live server`
 
