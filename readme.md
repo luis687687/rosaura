@@ -70,9 +70,11 @@ const MeuBotao = () => {
         type: "button",
         attributes: { id: "meuBotao" },
         events: {
-            click: () => alert("Botão clicado!")
+            click: () => alert("Botão clicado!"),
+            mouseup: () => alert("Mouse em cima!"),
+            mouseleave: () => alert("Mouse fora!")
         },
-        childElements: ["Clique Aqui"]
+        text: "Clique Aqui"
     });
 };
 ```
