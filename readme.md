@@ -22,6 +22,7 @@ O Rosaura Framework foi desenvolvido para facilitar a criação de aplicações 
 
 ## Estrutura do Projeto
 
+`
 /project-root
 ├── assets
 ├── rosaura
@@ -35,7 +36,7 @@ O Rosaura Framework foi desenvolvido para facilitar a criação de aplicações 
 ├── index.html
 ├── index.js
 └── app.js
-
+`
 
 ### Principais Pastas e Arquivos
 
@@ -109,7 +110,7 @@ export default ({})=>{
       novoValor = contador.value
       console.log("O contador foi atualizado para:", novoValor);
   }, [contador]);
-  
+
   return(
     BuildComponent({
       childElements: [
@@ -185,11 +186,14 @@ const MeuComponente = () => {
 # Exemplo de Uso de `routeIn`
 ```js
 import routeIn from "../../../rosaura/rozaura/RosauraRouter/routeIn/index.js";
+
 export default ({routerref}) => {
+  
   routeIn((params) => {
-      console.log("Rota aberta com parâmetros da url:", params);
+    console.log("Rota aberta com parâmetros da url:", params);
   }, { routerref });
-  return(
+
+return(
     BuildComponent({
       text: "Página 1"
     })
