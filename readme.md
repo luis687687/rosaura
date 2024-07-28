@@ -109,7 +109,7 @@ export default ({})=>{
   const [contador, setContador] = defVariable(0);
 
   varMonitor(() => {
-      novoValor = contador.value
+      const novoValor = contador.value
       console.log("O contador foi atualizado para:", novoValor);
   }, [contador]);
 
