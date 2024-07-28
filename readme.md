@@ -205,3 +205,4 @@ return(
 ```
 `params` contém um objecto com os parâmetros da url actual
 `routerref` é obrigatório ser declarado como atributo de um objecto dentro do parámetro da função principal
+### `routeLeave` tem a mesma estrutura que o routeIn, com a diferença de que a função é executada quando a rota é terminada
