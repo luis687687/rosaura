@@ -104,26 +104,31 @@ import { defVariable, varMonitor, varPrint } from "../../../rosaura/rozaura/inde
 
 export default ({})=>{
   const [contador, setContador] = defVariable(0);
+
   varMonitor(() => {
       novoValor = contador.value
       console.log("O contador foi atualizado para:", novoValor);
   }, [contador]);
+  
   return(
     BuildComponent({
       childElements: [
-        BuildComponent({text: varPrint("Contador de cliques {} ", [contador]),style: {width: "fit-content"}}),
+        BuildComponent({
+          text: varPrint("Contador de cliques {} ", [contador]),
+          style: {width: "fit-content"}}),
+
          BuildComponent({
-                    style: {
-                        background: 'brown',
-                        color: 'white',
-                        width: 'fit-content',
-                        padding: '10px 30px',
-                        borderRadius: '8px',
-                        cursor: 'pointer'
-                    },
-                    text: "Clica",
-                    events: { click: _ => setContador(contador.value + 1)}
-                })
+            style: {
+                background: 'brown',
+                color: 'white',
+                width: 'fit-content',
+                padding: '10px 30px',
+                borderRadius: '8px',
+                cursor: 'pointer'
+            },
+            text: "Clica",
+            events: { click: _ => setContador(contador.value + 1)}
+        })
       ]
     })
   )
@@ -140,10 +145,12 @@ import InputComponent from "../../Components/InputComponent/index.js";
 
 const MeuFormulario = () => {
     const [text, setText] = defVariable()
+
     return FormComponent({
         childElements: [
             BuildComponent({type:"h1", text: varPrint("Valor da input {}", [text])})
             InputComponent({ name: "nome", value: "", onChange: (value) => setText(value) }),
+
             BuildComponent({
                 type: "input",
                 events: {
@@ -164,12 +171,14 @@ const MeuFormulario = () => {
 
 ```js
 import { varPrint, defVariable } from "../../../rosaura/rozaura/index.js";
-const [variable, setVariable] = defVariable(0)
-setInterval( _ => setVariable(variable.value + 1 ), 2000)
+
 const MeuComponente = () => {
-    return BuildComponent({
-        text: varPrint("Texto dinâmico aqui {} à cada 2s ", [variable])
-    });
+  const [variable, setVariable] = defVariable(0)
+  setInterval( _ => setVariable(variable.value + 1 ), 2000)
+
+  return BuildComponent({
+      text: varPrint("Texto dinâmico aqui {} à cada 2s ", [variable])
+  });
 };
 ```
 
