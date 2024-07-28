@@ -134,10 +134,10 @@ export default ({})=>{
 # Formulários e Inputs 📝
 O Rosaura oferece componentes de formulário e input prontos para uso. Por exemplo, para criar um formulário:
 
+```js
 import FormComponent from "../../Components/FormComponent/index.js";
 import InputComponent from "../../Components/InputComponent/index.js";
 
-```js
 const MeuFormulario = () => {
     const [text, setText] = defVariable()
     return FormComponent({
