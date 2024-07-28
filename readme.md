@@ -58,8 +58,8 @@ cd rosaura
 open index.html
 ```
 
-# Uso 🔥
-## Criando Componentes 💡
+# Uso🔥
+## Criando Componentes💡
 Os componentes são construídos usando a função `BuildComponent`. Por exemplo, para criar um botão simples:
 
 
@@ -77,7 +77,7 @@ const MeuBotao = () => {
 };
 ```
 
-# Gerenciando Rotas 🚗
+# Gerenciando Rotas🚗
 O Rosaura Framework fornece um sistema de roteamento simples. As rotas são definidas em `app.js` usando `RosauraRouter` e `RosauraRoute`.
 
 ```js
@@ -97,7 +97,7 @@ export default () => {
 };
 ```
 
-# Manipulação de Variáveis de Estado 🎮
+# Manipulação de Variáveis de Estado🎮
 Utilize `defVariable` para criar variáveis de estado e `varMonitor` para monitorar alterações. Por exemplo:
 
 ```js
@@ -137,7 +137,7 @@ export default ({})=>{
 
 ```
 
-# Formulários e Inputs 📝
+# Formulários e Inputs📝
 O Rosaura oferece componentes de formulário e input prontos para uso. Por exemplo, para criar um formulário:
 
 ```js
@@ -167,7 +167,7 @@ const MeuFormulario = () => {
 };
 ```
 
-# Exemplos
+# Exemplos🔦
 ## Exemplo de Uso de `varPrint`
 
 ```js
