@@ -6,7 +6,7 @@ Rosaura é um framework leve e flexível para a construção de aplicações web
 
 - [Visão Geral](#visão-geral)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação](#instalação)
+- [Instalação](#instalação-🚀)
 - [Uso](#uso)
   - [Criando Componentes](#criando-componentes)
   - [Gerenciando Rotas](#gerenciando-rotas)
